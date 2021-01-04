@@ -1,6 +1,6 @@
 document.body.style.backgroundColor = "grey";
 var style = document.createElement('style')
-style.innerHTML = "div {width: 500px; height: 100px; background-color: white; position: absolute;";
+style.innerHTML = "div {width: 400px; height: 100px; background-color: white; position: absolute;";
 document.body.appendChild(style);
 
 
@@ -8,6 +8,7 @@ var button1 = document.createElement("button");// createElement maakt hier een b
 button1.innerHTML = "Button 1";
 document.body.appendChild(button1); /*appendChild voegt de button toe aan de body*/
 button1.style.backgroundColor = "green";
+button1.style.marginLeft = "40px";
 
 button1.onclick = function(){
 	document.body.style.backgroundColor = "green";
