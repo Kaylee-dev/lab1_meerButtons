@@ -12,20 +12,8 @@ for(i = 1; i <= 30; i++){
 	}
 	button.onclick = function(){
 		var currentColor = this.style.backgroundColor;
-		if (currentColor == color[0]){
-			this.style.backgroundColor = color[1];
-		}
-		else if (currentColor == color[1]) {
-			this.style.backgroundColor = color[2];
-		}
-		else if (currentColor == color[2]) {
-			this.style.backgroundColor = color[3];
-		}
-		else if (currentColor == color[3]) {
-			this.style.backgroundColor = color[4];
-			this.style.color = "white";
-		}
-		else if (currentColor == color[4]) {
+		this.style.backgroundColor = color[color.indexOf(currentColor) + 1];
+		if((color.indexOf(currentColor) + 1) == color.length){
 			this.remove();
 		}
 }
