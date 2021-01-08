@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	text-align: center;
+}
+#container{
+	background-color: grey;
+	margin-left: 370px;
+	width: 800px;
+	height: 610px;
+	position: absolute;
+}
+
+button{
+	font-size: 60px;
+	margin: 10px;
+	width: 130px;
+	height: 80px;
+	position: relative;
+
+}
